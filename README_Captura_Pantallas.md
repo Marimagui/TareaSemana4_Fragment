@@ -17,6 +17,11 @@ PANTALLA MENUS
 ![pantalla_menus](https://user-images.githubusercontent.com/38895977/44699977-51b73e00-aa4c-11e8-8bd5-8b5ec939fcf5.PNG)
 
 
+PANTALLA CORREO
+
+![pantalla_correo](https://user-images.githubusercontent.com/38895977/44700017-78757480-aa4c-11e8-8695-71e9b5e1c249.PNG)
+
+
 
 
 
