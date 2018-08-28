@@ -1,13 +1,18 @@
-package code.maribelhll.tareasemana3;
+package code.maribelhll.tareasemana4_fragment.pojo;
 
 public class DatosMascotas {
 
     private String nombre;
     private int foto;
-    private int likes;
+    private String likes;
 
-    public DatosMascotas(String nombre, int foto, int likes) {
+    public DatosMascotas(String nombre, int foto, String likes) {
         this.nombre = nombre;
+        this.foto = foto;
+        this.likes = likes;
+    }
+
+    public DatosMascotas (int foto, String likes){
         this.foto = foto;
         this.likes = likes;
     }
@@ -28,11 +33,11 @@ public class DatosMascotas {
         this.nombre = nombre;
     }
 
-    public int getLikes() {
+    public String getLikes() {
         return likes;
     }
 
-    public void setLikes(int likes) {
+    public void setLikes(String likes) {
         this.likes = likes;
     }
 }

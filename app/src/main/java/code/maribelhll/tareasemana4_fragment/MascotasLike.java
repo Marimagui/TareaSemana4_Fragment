@@ -1,4 +1,4 @@
-package code.maribelhll.tareasemana3;
+package code.maribelhll.tareasemana4_fragment;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +7,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import java.util.ArrayList;
+
+import code.maribelhll.tareasemana4_fragment.adapter.MascotasAdaptador;
+import code.maribelhll.tareasemana4_fragment.pojo.DatosMascotas;
 
 public class MascotasLike extends AppCompatActivity {
 
@@ -44,11 +47,11 @@ public class MascotasLike extends AppCompatActivity {
     public void InicializarMascotas (){
 
         mascotas = new ArrayList<DatosMascotas>();
-        mascotas.add(new DatosMascotas("Firulais", R.drawable.perro_1l, 0));
-        mascotas.add(new DatosMascotas("Bartolo", R.drawable.perro_2l, 0));
-        mascotas.add(new DatosMascotas("Oso", R.drawable.perro_3l,0));
-        mascotas.add(new DatosMascotas("Chester", R.drawable.perro_4l, 0));
-        mascotas.add(new DatosMascotas("Cometa", R.drawable.perro_5l, 0));
+        mascotas.add(new DatosMascotas("Firulais", R.drawable.perro_1l, "4"));
+        mascotas.add(new DatosMascotas("Bartolo", R.drawable.perro_2l, "0"));
+        mascotas.add(new DatosMascotas("Oso", R.drawable.perro_3l,"8"));
+        mascotas.add(new DatosMascotas("Chester", R.drawable.perro_4l, "5"));
+        mascotas.add(new DatosMascotas("Cometa", R.drawable.perro_5l, "10"));
     }
 
 }

@@ -1,4 +1,4 @@
-package code.maribelhll.tareasemana3;
+package code.maribelhll.tareasemana4_fragment.adapter;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;
@@ -12,6 +12,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import code.maribelhll.tareasemana4_fragment.pojo.DatosMascotas;
+import code.maribelhll.tareasemana4_fragment.R;
 
 public class MascotasAdaptador extends RecyclerView.Adapter<MascotasAdaptador.MascotasViewHolder> {
 
@@ -36,19 +39,22 @@ public class MascotasAdaptador extends RecyclerView.Adapter<MascotasAdaptador.Ma
         final DatosMascotas mascota = mascotas.get(position);
         mascotasViewHolder.imgFoto.setImageResource(mascota.getFoto());
         mascotasViewHolder.nombreCV.setText(mascota.getNombre());
-        //mascotasViewHolder.likesCV.setText(mascota.getLikes());
+        mascotasViewHolder.likesCV.setText(mascota.getLikes());
 
         mascotasViewHolder.btnlikesCV.setOnClickListener(new View.OnClickListener() {
             int cuenta =1;
+            String valor;
             @Override
             public void onClick(View v) {
-                Toast.makeText(activity, "Like a "+mascota.getNombre()+mascota.getLikes(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(activity, "Like a "+mascota.getNombre()+mascota.getLikes(),Toast.LENGTH_SHORT).show();
                 cuenta = cuenta+1;
-                mascota.setLikes(cuenta);
+                valor=String.valueOf(cuenta);
+                mascota.setLikes(valor);
+                mascotasViewHolder.likesCV.setText(mascota.getLikes());
             }
         });
-
     }
+
 
     @Override
     public int getItemCount() {

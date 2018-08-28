@@ -6,5 +6,19 @@
         android:id="@+id/mEstrella"
         android:icon="@drawable/ic_estrella"
         android:title="ESTRELLA"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+    android:id="@+id/mContacto"
+    android:title="@string/menu_Contacto"
+    android:orderInCategory="10">
+</item>
+
+    <item
+        android:id="@+id/mAbout"
+        android:title="@string/menu_about"
+        android:orderInCategory="11">
+    </item>
+
 </menu>
